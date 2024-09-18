@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: jmarcelotse//service-a
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources: {}
